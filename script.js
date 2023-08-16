@@ -3,7 +3,7 @@ const body = document.querySelector('body');
 
 panels.forEach((panel) => {
     panel.addEventListener('click', () =>{
-        removeActiveClasses()
+        removeActiveClasses();
         panel.classList.add('active');
         body.style.backgroundImage = panel.style.backgroundImage;
         body.classList.add('background');
@@ -12,6 +12,6 @@ panels.forEach((panel) => {
 
 function removeActiveClasses(){
     panels.forEach(panel => {
-        panel.classList.remove('active')
+        panel.classList.remove('active');
     })
 }
